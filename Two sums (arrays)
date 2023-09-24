@@ -1,0 +1,25 @@
+using namespace std;
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int n= nums.size();
+        int a=0;
+        int b=0;
+        int i=0;
+        while(i<n)
+        {int j=0;
+          while(j<n-1)
+            {
+                if(nums[i]+nums[j]==target)
+                {
+                    a=i;
+                    b=j;
+                    if(a!=b){
+                        break;
+                    }
+                }j++;
+            }i++;
+        } vector<int> arr = {b, a};
+        return arr;
+    }
+};
