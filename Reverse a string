@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout<<"Input the length of your name"<<endl;
+  int n;
+  cin>>n;
+  cout<<"Enter your name"<<endl;
+  char name[n];
+  cin>>name;
+  cout<<"your name is " << name <<endl;
+  int s=0;
+  int e=n-1;
+  while(s<e){
+    swap(name[s++], name[e--]);
+  }
+  cout<<"the reverse of your name is "<< name <<endl;
+}
